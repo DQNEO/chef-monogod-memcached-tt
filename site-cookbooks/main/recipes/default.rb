@@ -1,6 +1,7 @@
-# it should be restarted because 'memcached' cookbook do not it.
+# it should be started because 'memcached' cookbook do not it.
 service 'memcached' do
-  action :restart
+  action :start
+  not_if "pgrep memcached"
 end
 
 # for network test
