@@ -2,3 +2,8 @@
 service 'memcached' do
   action :restart
 end
+
+# for network test
+package 'telnet' do
+  action :install
+end
