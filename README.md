@@ -1,4 +1,4 @@
-# A Chef CookBook to install MongoDB and Memcached and TokyoTyrant
+# A Chef Repository to install MongoDB and Memcached and TokyoTyrant
 
 This cookbook will install:
 - MongoDB by 10gen rpm repository
