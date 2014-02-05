@@ -1,15 +1,16 @@
-# A Chef CookBook to install MongoDB and Memcached
+# A Chef CookBook to install MongoDB and Memcached and TokyoTyrant
 
 This cookbook will install:
 - MongoDB by 10gen rpm repository
 - Memcached by remi rpm repository
+- TokyoTyrant by compiling source code
 
 ## How to use
 ```
-vagrant init
 vagrant up
-vagrant ssh-config --host mongomemcached >> ~/.ssh/mongomemcached
-knife solo prepare mongomemcached
-knife solo cook mongomemcached
+vagrant ssh-config --host mongomemcachedtt >> ~/.ssh/mongomemcachedtt
+knife solo init .
+knife solo prepare mongomemcachedtt
+knife solo cook mongomemcachedtt
 ```
 
